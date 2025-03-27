@@ -11,11 +11,11 @@ export const getTime = () => {
 export const getDayMonthNameYearStr = isoString => {
    const date = new Date(isoString);
 
-   const monthName = date.toLocaleString('en-us', { month: 'short' });
-   const dayOfTheMonth = date.getDate();
-   const year = date.getFullYear();
+   const monthName = date.toLocaleString('en-us', { month: 'short' }); 
+   const dayOfTheMonth = date.getDate(); 
+   const year = date.getFullYear();  
 
-   const dateStr = `${dayOfTheMonth} ${monthName} ${year}`;
+   const dateStr = `${dayOfTheMonth} ${monthName} ${year}`; 
    return dateStr;
 };
 
