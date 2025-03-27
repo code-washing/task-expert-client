@@ -1,11 +1,11 @@
 export const getTime = () => {
    const dateObject = new Date();
    const hours = dateObject.getHours();
-   const partOfDay = hours < 12 ? 'AM' : 'PM';
+   const partOfDay = hours < 12 ? 'AM' : 'PM'; 
    const minutes = dateObject.getMinutes();
-   const seconds = dateObject.getSeconds();
+   const seconds = dateObject.getSeconds(); 
 
-   return { hours, partOfDay, minutes, seconds };
+   return { hours, partOfDay, minutes, seconds }; 
 };
 
 export const getDayMonthNameYearStr = isoString => {
@@ -13,7 +13,7 @@ export const getDayMonthNameYearStr = isoString => {
 
    const monthName = date.toLocaleString('en-us', { month: 'short' }); 
    const dayOfTheMonth = date.getDate(); 
-   const year = date.getFullYear();  
+   const year = date.getFullYear();   
 
    const dateStr = `${dayOfTheMonth} ${monthName} ${year}`; 
    return dateStr;
